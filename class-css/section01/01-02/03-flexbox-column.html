@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>플렉스박스 세로 실습</title>
+    <style>
+
+        body{
+            height: 100vh; /*vh = viewpoint height 화면의 높이*/
+            margin: 0;
+        }
+        .CSS_parents {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        background-color: skyblue;
+        
+        /* height: 500px; */
+        height: 100%; /*부모를 기준으로 100프로, 부모(body)의 높이 없어 소용X*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="CSS_parents">
+        <div>메뉴</div>
+        <div>알림</div>
+  </body>
+</html>

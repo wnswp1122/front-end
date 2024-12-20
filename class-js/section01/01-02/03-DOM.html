@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>DOM 실습</title>
+    <script>
+      const fn = () => {
+        const fruit = document.getElementById("my_tag").innerText;
+        alert(fruit);
+      };
+
+      const fn2 = () => {
+        const name = document.getElementById("name").value;
+        document.getElementById("window").innerText = `${name}님 환영합니다.`;
+      };
+    </script>
+  </head>
+  <body>
+    <div id="my_tag">사과</div>
+    <button onclick="fn()">과일 찾기</button>
+    <br />
+    <br />
+    오늘의 인삿말 :
+    <div id="window"></div>
+    <input type="text" id="name" />
+    <button onclick="fn2()">프로필 등록하기</button>
+  </body>
+</html>

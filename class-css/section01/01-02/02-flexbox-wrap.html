@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>플렉스박스 wrap 실습</title>
+    <style>
+      .CSS_parents1 {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        background-color: skyblue;
+        gap: 10px;
+      }
+      .css-box1 {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border: 5px solid red;
+      }
+      .CSS_parents2 {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        background-color: skyblue;
+        gap: 10px;
+
+        flex-wrap: wrap;
+      }
+      .css-box2 {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="CSS_parents1">
+      <!-- 찌그러지는 상황 -->
+      <div class="css-box1"></div>
+      <div class="css-box1"></div>
+      <div class="css-box1"></div>
+      <div class="css-box1"></div>
+      <div class="css-box1"></div>
+      <div class="css-box1"></div>
+    </div>
+
+    <br /><br />
+
+    <div class="CSS_parents2">
+      <!-- 아래로 내려주는 상황 -->
+      <div class="css-box2"></div>
+      <div class="css-box2"></div>
+      <div class="css-box2"></div>
+      <div class="css-box2"></div>
+      <div class="css-box2"></div>
+      <div class="css-box2"></div>
+    </div>
+  </body>
+</html>

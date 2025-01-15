@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout {
+  margin: 0 20px 40px;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+}
+
+/* Banner Image */
+.banner-image {
+  width: 100%;
+}
+
+/* Navigation */
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 42px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.selected-tab {
+  border-bottom: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 8px;
+  color: #000;
+}
+
+.unselected-tab {
+  color: #ababab;
+}
+
+/* Diary Display */
+.diary-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.diary {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.diary-image {
+  height: 285px;
+  width: auto;
+}
+
+.mood-image {
+  height: 100%;
+  width: 100%;
+}
+
+.diary-content {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 14px;
+  color: #777;
+}
+
+.mood {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.happy {
+  color: #ea5757;
+}
+
+.sad {
+  color: #28b4e1;
+}
+
+.surprised {
+  color: #d59029;
+}
+
+.angry {
+  color: #777;
+}
+
+.other {
+  color: #a229ed;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #919191;
+  text-align: right;
+  width: 100%;
+}
+
+.diary-title {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Diary Entry Box */
+.entry-box {
+  min-width: 360px;
+  height: fit-content;
+  border-radius: 16px;
+  background-color: #fff;
+  border: 1px solid #d4d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 24px;
+  gap: 40px;
+  text-align: left;
+  font-size: 24px;
+  color: #000;
+}
+
+.entry-box-title {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.entry-box-content {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.entry-box-content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #333;
+}
+
+.radio-button {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.diary-input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.diary-writing {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #333;
+}
+
+#title-input,
+#content-input {
+  appearance: none;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #d4d3d3;
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+#title-input::placeholder,
+#content-input::placeholder {
+  color: #ababab;
+}
+
+.diary-writing-submit-button {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #c7c7c7;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border: 0px;
+  justify-content: center;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #f2f2f2;
+}
+
+/* Footer */
+.footer-area {
+  width: 100%;
+  display: flex;
+  padding: 24px 20px;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-title {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.footer-representative {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #5f5f5f;
+}
+
+.footer-copyright {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #919191;
+}

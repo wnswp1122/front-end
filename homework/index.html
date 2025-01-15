@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diary Creation</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <div>Minji's Diary</div>
+      </div>
+      <img class="banner-image" src="./images/banner.png" />
+
+      <!-- Navigation -->
+      <div class="tab">
+        <div class="selected-tab">Diary Storage</div>
+        <div class="unselected-tab">Photo Storage</div>
+      </div>
+
+      <div class="main">
+        <!-- Diary display area -->
+        <div id="diary-display" class="diary-display"></div>
+
+        <!-- Entry box -->
+        <div class="entry-box">
+          <div class="entry-box-title">📍Write a Diary</div>
+          <div class="entry-box-content-area">
+            <div class="entry-box-content">How was your mood today?</div>
+            <div class="radio-group">
+              <div class="radio-button">
+                <input
+                  type="radio"
+                  name="mood-selection-button"
+                  value="Happy"
+                  checked
+                />
+                <div>I'm happy</div>
+              </div>
+              <div class="radio-button">
+                <input type="radio" name="mood-selection-button" value="Sad" />
+                <div>I'm sad</div>
+              </div>
+              <div class="radio-button">
+                <input
+                  type="radio"
+                  name="mood-selection-button"
+                  value="Surprised"
+                />
+                <div>I'm surprised</div>
+              </div>
+              <div class="radio-button">
+                <input
+                  type="radio"
+                  name="mood-selection-button"
+                  value="Angry"
+                />
+                <div>I'm angry</div>
+              </div>
+              <div class="radio-button">
+                <input
+                  type="radio"
+                  name="mood-selection-button"
+                  value="Other"
+                />
+                <div>Other</div>
+              </div>
+            </div>
+          </div>
+          <div class="diary-input-box">
+            <div class="diary-writing">
+              <div>Title</div>
+              <input
+                type="text"
+                id="title-input"
+                placeholder="Please enter a title."
+              />
+            </div>
+            <div class="diary-writing">
+              <div>Content</div>
+              <textarea
+                id="content-input"
+                rows="5"
+                placeholder="Please enter the content."
+              ></textarea>
+            </div>
+          </div>
+          <div>
+            <button class="diary-writing-submit-button" onclick="writeDiary()">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-area">
+      <div class="footer">
+        <div class="footer-title">Minji's Diary</div>
+        <div class="footer-representative">Representative: {name}</div>
+        <div class="footer-copyright">Copyright © 2024. {name} Co., Ltd.</div>
+      </div>
+    </div>
+  </body>
+</html>
